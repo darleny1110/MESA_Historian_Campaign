@@ -1,0 +1,4 @@
+When ever you aare done wroking on the progrma for the day or give up run these 3 commands:
+    1. git add . // adds the file we want to 
+    2. git commit -m " [your message] "
+    3. pit push 

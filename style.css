@@ -1,0 +1,206 @@
+.container{
+    height: 50%;
+    width: 50%;
+    border: 10px rgb(41,110,44) solid;
+    background-color:  rgb(185, 200, 188);
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+.container coolcat{
+    position: relative;
+}
+#coolcat{
+    margin: 0 auto;
+    width: 200px;
+    position: relative;
+    animation: movecat 10s linear forwards;
+}
+@keyframes movecat{
+    0%{left: -1000px;}
+    100%{left: 1000px;}
+}
+
+
+h1{
+    color: rgb(172, 141, 146);
+    position: relative;
+    animation: move_vote 10s ease-in; 
+}
+@keyframes move_vote{
+    0%{left: -100%}
+    100%{left: 0%;}
+}
+
+.container_ene{
+
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    border: none;
+    background: none;
+    color: rgb(125, 98, 233);
+
+}
+button:hover{
+    color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    height: 50%;
+    width: 50%;
+    border: 10px rgb(41,110,44) solid;
+    background-color:  rgb(185, 200, 188);
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+.container coolcat{
+    position: relative;
+}
+#coolcat{
+    margin: 0 auto;
+    width: 200px;
+    position: relative;
+    animation: movecat 10s linear forwards;
+}
+@keyframes movecat{
+    0%{left: -1000px;}
+    100%{left: 1000px;}
+}
+
+
+h1{
+    color: rgb(172, 141, 146);
+    position: relative;
+    animation: move_vote 10s ease-in; 
+}
+@keyframes move_vote{
+    0%{left: -100%}
+    100%{left: 0%;}
+}
+
+.container{
+    height: 50%;
+    width: 50%;
+    border: 10px rgb(41,110,44) solid;
+    background-color:  rgb(185, 200, 188);
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+.container coolcat{
+    position: relative;
+}
+#coolcat{
+    margin: 0 auto;
+    width: 200px;
+    position: relative;
+    animation: movecat 10s linear forwards;
+}
+@keyframes movecat{
+    0%{left: -1000px;}
+    100%{left: 1000px;}
+}
+
+
+ .container envelope{
+    color: rgb(172, 141, 146);
+    position: relative;
+    animation: move_vote 10s ease-in;
+}
+h1{
+   color: rgb(172, 141, 146);
+    position: relative;
+    animation: move_vote 10s ease-in; 
+}
+@keyframes move_vote{
+    0%{left: -100%}
+    100%{left: 0%;}
+}
+
+
+*/
