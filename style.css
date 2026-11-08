@@ -1,20 +1,27 @@
+body{
+    background-color: rgb(241, 187, 196);
+}
 .container{
     height: 50%;
     width: 50%;
     border: 10px rgb(41,110,44) solid;
-    background-color:  rgb(185, 200, 188);
+    background-color:  #ceaabf;
     display: flex;
     margin: auto;
     flex-direction: column;
     align-items: center;
-
+   /* animation: movecon  10s ease-in; */
+    position: relative;
 }
-
-
-
+@keyframes movecon{
+    0%{left: -100%;}
+    100%{left: 0%;}
+}
 .container coolcat{
     position: relative;
 }
+
+
 #coolcat{
     margin: 0 auto;
     width: 200px;
@@ -28,32 +35,53 @@
 
 
 h1{
-    color: rgb(172, 141, 146);
+    color: rgb(84, 134, 85);
     position: relative;
-    animation: move_vote 10s ease-in; 
+    /*animation: move_vote 10s ease-in; */
 }
 @keyframes move_vote{
-    0%{left: -100%}
+    0%{left: -100%;}
     100%{left: 0%;}
+    
 }
 
 .container_ene{
-
     display: flex;
     margin: auto;
     flex-direction: column;
     align-items: center;
+    height: 200px;
+    width: 300px;
+    border: 10px rgb(41,110,44) solid;
+    background-color:  rgb(170, 231, 180);
+    justify-content: center;
+    border: none;
+    margin-top: 99px;
+    z-index: 0;
+}
+#paco{
+    position: relative; /*make it so the other elemnets thinks its invisable *heh* */
+    width: 80%;
+    height: 100%;
+    background-color: rgb(24, 76, 122);
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 1px;
+    padding: 10px;
 }
 
 button {
     border: none;
     background: none;
+    position: absolute;
     color: rgb(125, 98, 233);
 
 }
 button:hover{
     color: blueviolet;
 }
+
+
 
 
 
