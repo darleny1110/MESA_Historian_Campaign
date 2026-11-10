@@ -10,27 +10,32 @@ body{
     margin: auto;
     flex-direction: column;
     align-items: center;
-   /* animation: movecon  10s ease-in; */
+    animation: movecon  10s ease-in; 
     position: relative;
 }
 @keyframes movecon{
     0%{left: -100%;}
     100%{left: 0%;}
 }
-.container coolcat{
+.container #coolcat{
     position: relative;
 }
 
 
 #coolcat{
-    margin: 0 auto;
+    margin: auto;
     width: 200px;
     position: relative;
     animation: movecat 10s linear forwards;
+    animation: camebackcat 10s linear forwards;
 }
 @keyframes movecat{
-    0%{left: -1000px;}
-    100%{left: 1000px;}
+    0%{left: 100%;}
+    100%{left: -100%;}
+}
+@keyframes camebackcat{
+    0%{left: 1000%;}
+    100%{left: 0%;}
 }
 
 
@@ -46,28 +51,144 @@ h1{
 }
 
 .container_ene{
-    display: flex;
     margin: auto;
     flex-direction: column;
     align-items: center;
     height: 200px;
     width: 300px;
-    border: 10px rgb(41,110,44) solid;
-    background-color:  rgb(170, 231, 180);
+    border: 10px rgb(205, 199, 115) solid;
+    background-color: #9b67b8;
     justify-content: center;
     border: none;
+    top:50%;
+    bottom: 50%;
     margin-top: 99px;
-    z-index: 0;
+    z-index: 20;
+    position: relative;
+    cursor: pointer; /* tsk change to geeky stuff */
+
+    
 }
+.container_ene:hover {
+    transform: scale(1.5) ;
+}
+/*
+.envelope{
+    margin:auto;
+    align-items: center;
+    top: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 200px;
+    background-color:  rgb(81, 158, 61);
+}*/
+
+#btton {
+    z-index: 8;
+}
+#burrito-rap{
+    position: absolute;
+    top:0;
+    left:0;
+    width:300px;
+    height:100px;
+    transform-origin: top;
+    transition: transform 0.6s ease, z-index 0s 0.2s;
+    z-index: 5;
+}
+
+ #flap{
+    width:0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 100px solid  #d093f0;
+
+}
+#ghost{
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 130px;
+    
+}
+
+#pocket{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:0;
+    height:0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 200px solid #9b67b8;
+    z-index: 3;
+}
+
+#pacos_preview{
+    position: absolute; /*make it so the other elemnets thinks its invisable *heh* absolut enot reltaive -wali and her typos */
+    width: 90%;
+    height: 90%;
+    background: rgb(249, 250, 251);
+    bottom: 0;
+    border-radius: 5px;
+    z-index: 2;
+    margin-left: 15px;
+    transition: transform 0.8s ease 1s;
+  /*  background-image: url("MESA_Historian_Campaign/hirono.png");*/
+}
+
+.container_ene.open #burrito-rap{
+    transform: rotateX(180deg);
+    z-index: 1;
+}
+.container_ene.open #pacos_preview{
+    transform: translateY(-100px);
+    z-index: 4;
+}
+
 #paco{
-    position: relative; /*make it so the other elemnets thinks its invisable *heh* */
-    width: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    background-color: rgb(24, 76, 122);
-    background-position: right;
-    background-repeat: no-repeat;
-    border-radius: 1px;
-    padding: 10px;
+    background-color: lavender;
+    backdrop-filter: blur 5px;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#paco.active{
+    display: flex;
+    opacity: 1;
+}
+
+#prince{
+    background: #ceaabf;
+    width: 90%;
+    max-width: 600px;
+    padding: 3rem;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(.8);
+    transition: transform 0.5s ease;
+   /* background-image: url("MESA_Historian_Campaign/hirono.png");*/
+
+}
+
+#paco.active #prince {
+    transform: scale(1);
+
 }
 
 button {
