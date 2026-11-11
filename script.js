@@ -4,7 +4,7 @@ function openEn(){
     envelope.classList.add('open');
     setTimeout(() =>{
         pre.classList.add('active');
-    },1500);
+    },500);
 
 }
 
@@ -16,6 +16,6 @@ function closelet(){
     prelet.classList.remove('active');
     setTimeout(() =>{
         envelope.classList.remove('open');
-    },1500);
+    },500);
 
 }

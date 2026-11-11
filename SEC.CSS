@@ -2,45 +2,50 @@
 body{
     background-color: rgb(241, 187, 196);
 }
+
+#banner{
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x:clip;
+    width:100%;
+}
 #coolcat{
-    margin: auto;
     height: 400px;
     width: 450px;
     position: absolute;
     animation: movecat 3s linear forwards;
+
 }
 @keyframes movecat{
-    0%{left: 60%;}
+    0%{left: -10%;}
     100%{left: 70%;}
 }
-
 .container{
    /* height: 250px;
     width: 50%;*/
-    width: 40%;
     border: 10px rgb(41,110,44) solid;
     background-color:  #ceaabf;
     
-    justify-content: center;
+    justify-self: center;
     position: relative;
     margin-top: 10px;
     /*display: flex;
     
     flex-direction: column;
     align-items: center;*/
-    animation: movecon  3s ease-in;
+    animation: movecon 3s linear forwards;
     
   
 }
 @keyframes movecon{
-    0%{left: -100%;}
+    0%{left: -80%;}
     100%{left: 0%;}
 }
-
-.container #coolcat{
-    position: relative;
-}
-
 
 
 h1{
