@@ -2,7 +2,7 @@ body{
     background-color: rgb(241, 187, 196);
 }
 .container{
-    height: 50%;
+    height: 250px;
     width: 50%;
     border: 10px rgb(41,110,44) solid;
     background-color:  #ceaabf;
@@ -10,7 +10,7 @@ body{
     margin: auto;
     flex-direction: column;
     align-items: center;
-    animation: movecon  10s ease-in; 
+    animation: movecon  3.5s ease-in;
     position: relative;
 }
 @keyframes movecon{
@@ -24,24 +24,23 @@ body{
 
 #coolcat{
     margin: auto;
-    width: 200px;
-    position: relative;
-    animation: movecat 10s linear forwards;
-    animation: camebackcat 10s linear forwards;
-}
-@keyframes movecat{
-    0%{left: 100%;}
-    100%{left: -100%;}
-}
-@keyframes camebackcat{
-    0%{left: 1000%;}
-    100%{left: 0%;}
+    height: 400px;
+    width: 450px;
+    position: absolute;
+    animation: movecat 3s linear forwards;
 }
 
+@keyframes movecat{
+    0%{left: -100%;}
+    100%{left: 70%;}
+}
 
 h1{
+    font-size: 4rem;
     color: rgb(84, 134, 85);
     position: relative;
+    margin-top:6%;
+
     /*animation: move_vote 10s ease-in; */
 }
 @keyframes move_vote{
@@ -54,8 +53,8 @@ h1{
     margin: auto;
     flex-direction: column;
     align-items: center;
-    height: 200px;
-    width: 300px;
+    height: 700px;
+    width: 900px;
     border: 10px rgb(205, 199, 115) solid;
     background-color: #9b67b8;
     justify-content: center;
@@ -70,20 +69,8 @@ h1{
     
 }
 .container_ene:hover {
-    transform: scale(1.5) ;
+    transform: scale(1.2) ;
 }
-/*
-.envelope{
-    margin:auto;
-    align-items: center;
-    top: 50px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 200px;
-    background-color:  rgb(81, 158, 61);
-}*/
 
 #btton {
     z-index: 8;
@@ -97,24 +84,28 @@ h1{
     transform-origin: top;
     transition: transform 0.6s ease, z-index 0s 0.2s;
     z-index: 5;
+
+    
 }
 
  #flap{
     width:0;
     height: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
+    border-left: 450px solid transparent;
+    border-right: 450px solid transparent;
     border-top: 100px solid  #d093f0;
 
+    transform: scaleY(3.5);
+    transform-origin: top;
 }
 #ghost{
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
     background: black;
     border-radius: 50%;
     position: absolute;
-    top: 80px;
-    left: 130px;
+    top: 320px;
+    left: 402.25px;
     
 }
 
@@ -124,10 +115,13 @@ h1{
     left:0;
     width:0;
     height:0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
+    border-left: 450px solid transparent;
+    border-right: 450px solid transparent;
     border-bottom: 200px solid #9b67b8;
     z-index: 3;
+
+    transform: scaleY(3.5);
+    transform-origin: bottom;
 }
 
 #pacos_preview{
@@ -138,8 +132,8 @@ h1{
     bottom: 0;
     border-radius: 5px;
     z-index: 2;
-    margin-left: 15px;
-    transition: transform 0.8s ease 1s;
+    margin-left: 45px;
+    transition: transform 0.4s ;
   /*  background-image: url("MESA_Historian_Campaign/hirono.png");*/
 }
 
@@ -159,13 +153,13 @@ h1{
     width: 100%;
     height: 100%;
     background-color: lavender;
-    backdrop-filter: blur 5px;
-    z-index: 10;
+    backdrop-filter: blur (5px);
+    z-index: 50;
     display: none;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 #paco.active{
@@ -182,27 +176,40 @@ h1{
     position: relative;
     transform: scale(.8);
     transition: transform 0.5s ease;
-   /* background-image: url("MESA_Historian_Campaign/hirono.png");*/
-
+    background-image: url("MESA_Historian_Campaign/hirono.png");
 }
 
 #paco.active #prince {
     transform: scale(1);
-
 }
+
+
+
 
 button {
     border: none;
     background: none;
     position: absolute;
     color: rgb(125, 98, 233);
-
 }
+
 button:hover{
     color: blueviolet;
 }
 
-
+#closebttn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    color: darkblue;
+    background: none;
+    border: none;
+    font-size: 5rem;
+}
+#closebttn:hover{
+    color: yellow;
+}
 
 
 

@@ -8,3 +8,14 @@ function openEn(){
 
 }
 
+function closelet(){
+    document.getElementById('paco').classList.remove('active');
+    const envelope = document.getElementById('container_ene');
+    const prelet = document.getElementById('paco');
+    
+    prelet.classList.remove('active');
+    setTimeout(() =>{
+        envelope.classList.remove('open');
+    },1500);
+
+}
