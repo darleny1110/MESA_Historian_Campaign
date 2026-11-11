@@ -1,45 +1,37 @@
 
 body{
     background-color: rgb(241, 187, 196);
+ 
+
+  
 }
 
-#banner{
+#banner{ /* just setting the layout of the banner*/
     display: flex;
-    margin: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width:100%; 
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow-x:clip;
-    width:100%;
+    height: 250px; /*the heoght of the box*/
+    flex-direction: row;
 }
-#coolcat{
-    height: 400px;
-    width: 450px;
-    position: absolute;
-    animation: movecat 3s linear forwards;
 
-}
-@keyframes movecat{
-    0%{left: -10%;}
-    100%{left: 70%;}
-}
 .container{
-   /* height: 250px;
-    width: 50%;*/
+    width: 50%;
+    box-sizing: border-box;
     border: 10px rgb(41,110,44) solid;
     background-color:  #ceaabf;
     
     justify-self: center;
     position: relative;
-    margin-top: 10px;
-    /*display: flex;
+    margin-top: 50px;
+  
+    display: flex;
     
     flex-direction: column;
-    align-items: center;*/
+    align-items: center;
     animation: movecon 3s linear forwards;
-    
+
   
 }
 @keyframes movecon{
@@ -48,12 +40,50 @@ body{
 }
 
 
+
+#coolcat{
+    margin:auto;
+    max-height: 300px;
+    max-width: 350px;
+    height: 24vw;
+    width:25vw;
+    position: relative;
+    justify-self: center;
+    
+    animation: movecat 3s linear forwards;
+
+}
+
+#cool{
+    margin:auto;
+    max-height: 300px;
+    max-width: 350px;
+    height: 24vw;
+    width:25vw;
+    position: relative;
+    justify-content: center;
+    
+    animation: movecool 3s linear forwards;
+    
+
+}
+
+@keyframes movecat{
+    0%{left: -79%;}
+    100%{left: -5%;}
+}
+@keyframes movecool{
+    0%{left: -79%;}
+    100%{left: 5%;}
+}
+
 h1{
-    font-size: 4rem;
+    font-size:clamp(2rem, 4vw, 4rem);
     color: rgb(84, 134, 85);
     position: relative;
-    margin-top:6%;
-
+    margin-top:4%;
+    
+   
     /*animation: move_vote 10s ease-in; */
 }
 
@@ -73,7 +103,7 @@ h1{
     z-index: 20;
     position: relative;
     cursor: pointer; /* tsk change to geeky stuff */
-
+    
     
 }
 .container_ene:hover {
@@ -82,17 +112,15 @@ h1{
 
 #btton {
     z-index: 8;
-}#burrito-rap{
+}
+#burrito-rap{
     position: absolute;
     top:0;
     left:0;
-    width:300px;
-    height:100px;
+    
     transform-origin: top;
     transition: transform 0.6s ease, z-index 0s 0.2s;
     z-index: 5;
-
-    
 }
 
  #flap{
