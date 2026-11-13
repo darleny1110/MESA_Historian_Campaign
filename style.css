@@ -252,12 +252,13 @@ button:hover{
 #closebttn{
     position: absolute;
     top: 10px;
-    right: 15px;
+   
     cursor: pointer;
     color: rgb(95, 10, 57);
     background: none;
     border: none;
     font-size: 5rem;
+    
 }
 #closebttn:hover{
     color: rgb(71, 126, 166);
