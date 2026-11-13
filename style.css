@@ -180,6 +180,7 @@ h1{
     transform: translateY(-100px);
     z-index: 4;
 }
+
 #paco{
     position: fixed;
     top: 0;
@@ -235,4 +236,30 @@ h1{
 
 #paco.active #prince {
     transform: scale(1);
+}
+
+
+button {
+    border: none;
+    background: none;
+    position: absolute;
+    color: rgb(125, 98, 233);
+}
+
+button:hover{
+    color: rgb(102, 63, 139);
+}
+
+#closebttn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    color: rgb(95, 10, 57);
+    background: none;
+    border: none;
+    font-size: 5rem;
+}
+#closebttn:hover{
+    color: rgb(71, 126, 166);
 }
