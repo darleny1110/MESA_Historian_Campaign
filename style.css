@@ -180,7 +180,6 @@ h1{
     transform: translateY(-100px);
     z-index: 4;
 }
-
 #paco{
     position: fixed;
     top: 0;
@@ -205,196 +204,35 @@ h1{
 
 
 #prince{
-    background: #9d3c75;
-    width: 40%;
-
+    background: #ceaabf;
+    width: 50%;
     max-width: 600px;
-    padding: 3rem;
+    padding: 1rem;
     border-radius: 5px;
     position: relative;
-    transform: scale(.8);
-    transition: transform 0.5s ease;
-    background-image: url("MESA_Historian_Campaign/kayla.gif");
+    box-sizing: border-box;
+    background-image: url("MESA_Historian_Campaign/collage.gif");
+}
+#poster{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+@media screen and (max-width: 600px) {
+    #prince {
+        width: 10%;
+        padding: 1rem;
+        transform: scale(1);
+    }
+
+    #poster {
+        width: 10%;
+        height: auto;
+    }
 }
 
 #paco.active #prince {
     transform: scale(1);
 }
-
-
-
-
-button {
-    border: none;
-    background: none;
-    position: absolute;
-    color: rgb(125, 98, 233);
-}
-
-button:hover{
-    color: rgb(102, 63, 139);
-}
-
-#closebttn{
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    cursor: pointer;
-    color: rgb(95, 10, 57);
-    background: none;
-    border: none;
-    font-size: 5rem;
-}
-#closebttn:hover{
-    color: rgb(71, 126, 166);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-
-
-
-
-
-
-
-
-
-
-.container{
-    height: 50%;
-    width: 50%;
-    border: 10px rgb(41,110,44) solid;
-    background-color:  rgb(185, 200, 188);
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-
-
-.container coolcat{
-    position: relative;
-}
-#coolcat{
-    margin: 0 auto;
-    width: 200px;
-    position: relative;
-    animation: movecat 10s linear forwards;
-}
-@keyframes movecat{
-    0%{left: -1000px;}
-    100%{left: 1000px;}
-}
-
-
-h1{
-    color: rgb(172, 141, 146);
-    position: relative;
-    animation: move_vote 10s ease-in; 
-}
-@keyframes move_vote{
-    0%{left: -100%}
-    100%{left: 0%;}
-}
-
-.container{
-    height: 50%;
-    width: 50%;
-    border: 10px rgb(41,110,44) solid;
-    background-color:  rgb(185, 200, 188);
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-
-
-.container coolcat{
-    position: relative;
-}
-#coolcat{
-    margin: 0 auto;
-    width: 200px;
-    position: relative;
-    animation: movecat 10s linear forwards;
-}
-@keyframes movecat{
-    0%{left: -1000px;}
-    100%{left: 1000px;}
-}
-
-
- .container envelope{
-    color: rgb(172, 141, 146);
-    position: relative;
-    animation: move_vote 10s ease-in;
-}
-h1{
-   color: rgb(172, 141, 146);
-    position: relative;
-    animation: move_vote 10s ease-in; 
-}
-@keyframes move_vote{
-    0%{left: -100%}
-    100%{left: 0%;}
-}
-
-
-*/
