@@ -91,8 +91,8 @@ h1{
     margin: auto;
     flex-direction: column;
     align-items: center;
-    height: 700px;
-    width: 900px;
+    height: 400px;
+    width: 570px;
     border: 10px rgb(205, 199, 115) solid;
     background-color: #8267b8;
     justify-content: center;
@@ -126,22 +126,23 @@ h1{
  #flap{
     width:0;
     height: 0;
-    border-left: 450px solid transparent;
-    border-right: 450px solid transparent;
-    border-top: 100px solid  #a59fc3;
-
+    border-left: 285px solid transparent;
+    border-right: 285px solid transparent;
+    border-top: 70px solid  #a59fc3;
     transform: scaleY(3.5);
     transform-origin: top;
 }
+
+
 #ghost{
     width: 100px;
     height: 100px;
     background: black;
     border-radius: 50%;
     position: absolute;
-    top: 320px;
-    left: 402.25px;
-    
+   
+    left: 41%;
+    top: 170px;    
 }
 
 #pocket{
@@ -150,14 +151,16 @@ h1{
     left:0;
     width:0;
     height:0;
-    border-left: 450px solid transparent;
-    border-right: 450px solid transparent;
-    border-bottom: 200px solid #8267b8;
+    border-left: 285px solid transparent;
+    border-right: 285px solid transparent;
+    border-bottom: 114px solid #5e4b85;
     z-index: 3;
 
     transform: scaleY(3.5);
     transform-origin: bottom;
 }
+
+
 
 #pacos_preview{
     position: absolute; /*make it so the other elemnets thinks its invisable *heh* absolut enot reltaive -wali and her typos */
@@ -167,10 +170,12 @@ h1{
     bottom: 0;
     border-radius: 5px;
     z-index: 2;
-    margin-left: 45px;
+    margin-left: 30px;
     transition: transform 0.4s ;
   /*  background-image: url("MESA_Historian_Campaign/hirono.png");*/
 }
+
+
 
 .container_ene.open #burrito-rap{
     transform: rotateX(180deg);
@@ -238,6 +243,7 @@ h1{
     transform: scale(1);
 }
 
+
 button {
     border: none;
     background: none;
@@ -252,14 +258,32 @@ button:hover{
 #closebttn{
     position: absolute;
     top: 10px;
-   
+    
     cursor: pointer;
     color: rgb(95, 10, 57);
     background: none;
     border: none;
-    font-size: 3rem;
-    
+    font-size: 5rem;
 }
 #closebttn:hover{
     color: rgb(71, 126, 166);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
